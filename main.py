@@ -39,3 +39,7 @@ feladatok.elott_volt_1900_01_01(lista)
 print("\n4.feladat")
 db = feladatok.kettoezer_ota(lista)
 print(f"{db} stadion van.")
+
+print("\n5.feladat")
+buffalo = feladatok.buffalo(lista)
+print(f"Ennyi volt: {buffalo}")

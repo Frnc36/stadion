@@ -41,5 +41,12 @@ def kettoezer_ota(lista):
     return db   
 
 
-def buffalo():
-    
+def buffalo(lista):
+    cv = 0
+    ossz = 0
+
+    while cv < len(lista):
+        if lista[cv].varos == "Buffalo":
+            ossz += lista[cv].csapatok_szama
+        cv += 1
+    return ossz
