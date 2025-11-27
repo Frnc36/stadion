@@ -6,14 +6,14 @@ stadion_lista = []
 def fajlbeolvasas():
     f = open("stadionok.txt", "r", encoding="UTF-8")
     f.readline()
-    szoveg_lista = f.readlines()
+    szoveg_lista = f.readlines() # lista típus
     f.close
 
     i = 0
     while i < len(szoveg_lista):
-        sor = szoveg_lista[i].strip().split(";")
-        stadion = Stadion(sor[0], sor[1], int(sor[2]), sor[3], sor[4])
-        stadion_lista.append(stadion)
+        sor = szoveg_lista[i].strip().split(";") # lista típus lesz, a sorok lesz az elemi
+        stadion = Stadion(sor[0], sor[1], int(sor[2]), sor[3], sor[4]) # példányosítás
+        stadion_lista.append(stadion) 
         i += 1
     
     i = 0
